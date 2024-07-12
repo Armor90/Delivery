@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    /* первое с чего нач верстка, нужно что бы размеры боксов соотв заданным размерам */
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* убираем стандартные отступы */
+}
+.logo{
+    max-width: 100px;
+    /* лучше исп макс или мин виз, тогда контент не будет разваливаться */
+}
+.logo img{
+    width: 100%;
+    /* выровняли ширину картинки, что бы ширина была по размеру блока logo */
+}
+.header{
+height: 124px;
+border: 1px solid red;
+}
+.header-box{
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    /* делает блоки флексовыми, изза этого детей проще распр по разн местам(пример кнопки и лого в одну линию) */
+    align-items: center;
+    /* 2 блока выстроятся по центру и по вертикали */
+    justify-content: space-between;
+    /* раскидали блоки по углам */
+    /* flex помогает распределять инфу внутри блоков */
+}
+.main{
+
+}
+.container{
+    height: 100%;
+    /* что бы контейнер растянутся на всю ширину 100% шапки*/
+    max-width: 1230px;
+    /* макс ширина на экране, падинги отожмут контент и по итогу будет 1200 */
+    border: 1px solid blue;
+    margin: 0px auto;
+    /* margin слевасправа и верхниз */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer{
+    height: 156px;
+    /*
+    margin: 10px;
+    padding: 20px;
+    pading внутренний отступ
+    margin внешний отступ */
+}
+.footer-box{
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-nav{
+    flex-grow: 1;
+    /* растянуло полностью, заняло почти всю ширину */
+}
